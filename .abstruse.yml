@@ -8,5 +8,4 @@ install:
   - go get ./... 
 
 script:
-  - "$CMD"
-
+  - if [[ "$CMD" ]]; then $CMD; fi
