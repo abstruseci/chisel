@@ -1,8 +1,8 @@
 image: golang:1.15 
 
 matrix:
-  - env: CMD="go test -v ./..."
-  - env: CMD="go test -v -race ./..."
+  - env: CMD=go test -v ./...
+  - env: CMD=go test -v -race ./...
 
 install:
   - go get ./... 
